@@ -1,0 +1,93 @@
+/* changes the background color to grey and the text color to white */
+body {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.header-heading {
+  margin-right: 20px; 
+}
+/* changes the links to gold with no text decoration */
+a {
+  color: gold;
+  text-decoration: none;
+}
+/* assigns the underline text decoration when the link is hovered over */
+a:hover {
+  text-decoration: underline;
+}
+
+/* styles the idividual boxes */
+.box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* makes it a grid with 2 columns */
+#body-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* aligns the hangman game to the center */
+.hangman-UI {
+    text-align: center;
+}
+
+/* styles the virtual keyboard */
+.virtual-keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  /* styles the row of the keyboard */
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0; 
+  }
+  
+  /* styles the individual buttons of the keyboard */
+  .keyboard-key {
+    height: 50px;
+    width: 50px;
+  }
+   
+  .lost {
+    color: red;
+  }
+
+  .won {
+    color: green;
+  }
+
+  .help-content {
+    font-size: 20px;
+  }
